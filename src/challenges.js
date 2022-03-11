@@ -1,22 +1,22 @@
-//Amanda Karoline
+// Amanda Karoline
 // Desafio 1
 function compareTrue(a, b) {
   if (a > b && b < a === true) {
-    return("true")
+    return ("true")
   }
   else if (a > b && a < b) {
-    return("false")
+    return ('false')
   }
   else {
-    return("false")
+    return ('false')
   }
 }
 compareTrue(50, 8)
 
 // Desafio 2 - feito
 function calcArea(base, height) {
-  const area = base * height / 2;
-  return(area);
+  const area = (base * height) / 2;
+  return (area);
 }
 calcArea(51, 1);
 // Desafio 3
