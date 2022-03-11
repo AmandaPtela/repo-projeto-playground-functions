@@ -1,14 +1,24 @@
 //Amanda Karoline
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(a, b) {
+  if (a > b && b < a == true){
+    console.log("true")
+  }
+  else if (a > b && a < b){
+    console.log("false")
+  }
+  else {
+    console.log("false")
+  }
 }
+compareTrue(50, 8)
 
-// Desafio 2
-function calcArea() {
-  // seu código aqui
+// Desafio 2 - feito
+function calcArea(base, height) {
+  const area = base * height / 2;
+  console.log(area);
 }
-
+calcArea(51, 1);
 // Desafio 3
 function splitSentence() {
   // seu código aqui
