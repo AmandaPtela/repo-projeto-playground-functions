@@ -1,10 +1,10 @@
 //Amanda Karoline
 // Desafio 1
 function compareTrue(a, b) {
-  if (a > b && b < a == true){
+  if (a > b && b < a === true) {
     console.log("true")
   }
-  else if (a > b && a < b){
+  else if (a > b && a < b) {
     console.log("false")
   }
   else {
