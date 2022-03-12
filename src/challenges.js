@@ -1,16 +1,17 @@
 // Amanda Karoline
 // Desafio 1
-let retorno = true;
+let retorno = false;
 function compareTrue(a, b){
-  if (a !== "Amanda" && b !== "Tássio" || a !== "Amanda" && b == "Tássio"){
-    return(retorno = false)}
+  if (a === true && b === true ){
+    return (true);}
 
-  else if (a == "Amanda" && b == "Tássio"){
-    return(true) }
+  else if (a == true && b == false){
+    return(false)}
 
-  else;
+  else (a == false && b == false);{
+  return (false)}
 }
-compareTrue("Amanda", "Tássio")
+  compareTrue(true, true);
 
 // Desafio 2 - feito - ok
 function calcArea(base, height) {
