@@ -1,6 +1,5 @@
 // Amanda Karoline
 // Desafio 1
-let retorno = false;
 function compareTrue(a, b){
   if (a === true && b === true ){
     return (true);}
