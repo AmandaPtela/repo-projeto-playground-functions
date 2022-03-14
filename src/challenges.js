@@ -30,16 +30,13 @@ function concatName() {
 }
 
 // Desafio 5
-let pontosWin = 3;
-let pontosTie = 1;
-let pontosTotal = 0;
+let pontosWins = 3;
+let pontosTies = 1;
 
 function footballPoints(wins, ties) {
-  if (wins = 1) {
-    let pontosWin = (wins * pontosWin);
-    return(pontosTotal)
-  }
-}
+    let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
+    return(pontosTotal)}
+
 footballPoints(14, 8)
 
 // Desafio 6
