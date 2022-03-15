@@ -57,9 +57,14 @@ function footballPoints(wins, ties) {
 footballPoints(14, 8)
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros){}
+  /*let vezes = 0;
+  for (vezes = 0; vezes <= 0; vezes +=1 ){
+    let maior = numeros.reduce();
+    console.log(maior)
+  }
 }
+highestCount([9, 1, 2, 3, 9, 5, 7])*/
 
 // Desafio 7
 function catAndMouse() {
@@ -72,9 +77,18 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(decifrar) {
+  let vogais = ["a" , "e" , "i" , "o" , "u"];
+  let numeracao = [1 , 2 , 3 , 4 , 5];
+
+  for (i = 0; i <= 4; i += 1){
+    let letras = numeracao[i];
+    
+    console.log(letras);
+  }
 }
+encode("hello")
+
 function decode() {
   // seu código aqui
 }
