@@ -46,15 +46,14 @@ function concatName(palavras, palavras2, palavras3) {
 concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], ['foguete', 'não', 'tem', 'ré'], ['captain', 'my', 'captain'])
 
 // Desafio 5
-//let pontosWins = 3;
-//let pontosTies = 1;
+let pontosWins = 3;
+let pontosTies = 1;
 
-function footballPoints(wins, ties) {}
-  //let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
-  //return (pontosTotal)
-//}
+function footballPoints(wins, ties) {
+  let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
+  return (pontosTotal)}
 
-//footballPoints(14, 8)
+footballPoints(14, 8)
 
 // Desafio 6
 function highestCount() {
