@@ -1,16 +1,19 @@
 // Amanda Karoline
 // Desafio 1
-function compareTrue(a, b){
-  if (a === true && b === true ){
-    return (true);}
+function compareTrue(a, b) {
+  if (a === true && b === true) {
+    return (true);
+  }
 
-  else if (a == true && b == false){
-    return(false)}
+  else if (a === true && b === false) {
+    return (false)
+  }
 
-  else (a == false && b == false);{
-  return (false)}
+  else (a === false && b === false); {
+    return (false)
+  }
 }
-  compareTrue(true, true);
+compareTrue(true, true);
 
 // Desafio 2 - feito - ok
 function calcArea(base, height) {
@@ -20,13 +23,17 @@ function calcArea(base, height) {
 calcArea(51, 1);
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+
+function splitSentence() { } /*{
+  let frase = ["Vamo que vamo!"]
+  for (i = 0 ; i <= frase.length; i += 1);
+  return(frase.split(' '));
+}*/
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  let palavras = ["foguete", "não", "tem", "ré"];
+  for (i = 0; i <=  palavras.lenght; i += 1){}
 }
 
 // Desafio 5
@@ -34,8 +41,9 @@ let pontosWins = 3;
 let pontosTies = 1;
 
 function footballPoints(wins, ties) {
-    let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
-    return(pontosTotal)}
+  let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
+  return (pontosTotal)
+}
 
 footballPoints(14, 8)
 
