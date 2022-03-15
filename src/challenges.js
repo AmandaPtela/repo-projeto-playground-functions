@@ -31,21 +31,30 @@ function splitSentence() { } /*{
 }*/
 
 // Desafio 4
-function concatName() {
-  let palavras = ["foguete", "não", "tem", "ré"];
-  for (i = 0; i <=  palavras.lenght; i += 1){}
+function concatName(palavras, palavras2, palavras3) {
+  let concat ;
+  for (i = 0; i <= palavras.length; i += 1){
+    concat = palavras.slice(-1) + ", " + palavras[0];
+    return(concat)}
+    for (i = 0; i <= palavras2.length; i += 1){
+      concat = palavras2.slice(-1) + ", " + palavras2[0];
+      return(concat)}
+      for (i = 0; i <= palavras3.length; i += 1){
+        concat = palavras3.slice(-1) + ", " + palavras3[0];
+        return(concat)}
 }
+concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], ['foguete', 'não', 'tem', 'ré'], ['captain', 'my', 'captain'])
 
 // Desafio 5
-let pontosWins = 3;
-let pontosTies = 1;
+//let pontosWins = 3;
+//let pontosTies = 1;
 
-function footballPoints(wins, ties) {
-  let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
-  return (pontosTotal)
-}
+function footballPoints(wins, ties) {}
+  //let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
+  //return (pontosTotal)
+//}
 
-footballPoints(14, 8)
+//footballPoints(14, 8)
 
 // Desafio 6
 function highestCount() {
