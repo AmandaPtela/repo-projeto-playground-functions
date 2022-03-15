@@ -24,11 +24,12 @@ calcArea(51, 1);
 
 // Desafio 3
 
-function splitSentence() { } /*{
-  let frase = ["Vamo que vamo!"]
-  for (i = 0 ; i <= frase.length; i += 1);
-  return(frase.split(' '));
-}*/
+function splitSentence(frase) {
+  for (i = 0 ; i <= frase.length; i += 1){
+    let splited = frase.split(" ")
+  return(splited)}
+}
+splitSentence("Vamo que vamo")
 
 // Desafio 4
 function concatName(palavras, palavras2, palavras3) {
