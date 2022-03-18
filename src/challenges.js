@@ -54,17 +54,21 @@ function footballPoints(wins, ties) {
   let pontosTotal = (wins * pontosWins) + (ties * pontosTies);
   return (pontosTotal)}
 
-footballPoints(14, 8)
+footballPoints(14, 8);
 
 // Desafio 6
-function highestCount(numeros){}
-  /*let vezes = 0;
-  for (vezes = 0; vezes <= 0; vezes +=1 ){
-    let maior = numeros.reduce();
-    console.log(maior)
+function highestCount(numeros){
+  let maior = Math.max(...numeros);
+  let vezes = 0;
+
+  for (i = 0; i <= numeros.length; i +=1){
+    if (numeros[i] == maior){
+      vezes +=1;
+    }
   }
+  return(vezes);
 }
-highestCount([9, 1, 2, 3, 9, 5, 7])*/
+highestCount([9, 1, 2, 3, 9, 5, 7])
 
 // Desafio 7
 function catAndMouse() {
@@ -77,17 +81,7 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode(decifrar) {
-  let vogais = ["a" , "e" , "i" , "o" , "u"];
-  let numeracao = [1 , 2 , 3 , 4 , 5];
-
-  for (i = 0; i <= 4; i += 1){
-    let letras = numeracao[i];
-    
-    console.log(letras);
-  }
-}
-encode("hello")
+function encode(decifrar) {}
 
 function decode() {
   // seu código aqui
