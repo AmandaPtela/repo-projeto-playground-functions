@@ -99,7 +99,39 @@ function fizzBuzz(numeross) {
 }
 fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
-function encode(decifrar) {}
+
+function encode(decifrar) {
+  let arrayDecifrar = decifrar.split([""]);
+ 
+
+  console.log(arrayDecifrar);
+
+  for (i = 0; i < arrayDecifrar.length; i += 1){
+    if (arrayDecifrar.includes("a")){
+        decifrado = decifrar.replace(/a/, '1');
+      }
+    else if (arrayDecifrar.includes("e")){
+      decifrado = decifrar.replace(/e/, '2');
+    }
+    
+    else if (arrayDecifrar.includes("i")){
+      decifrado = decifrar.replace(/i/, '3');
+    }
+    
+    else if (arrayDecifrar.includes("o")){
+      decifrado = decifrar.replace(/o/, '4');
+    }
+    
+    else if (arrayDecifrar.includes("u")){
+      decifrado = decifrar.replace(/u/, '5');
+    }
+    else{
+      return("bug")
+    }
+  }
+  console.log(decifrado)
+}
+encode("Go,trybe");
 
 function decode() {
   // seu código aqui
