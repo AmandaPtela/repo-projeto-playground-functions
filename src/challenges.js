@@ -100,42 +100,26 @@ function fizzBuzz(numeross) {
 fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
 
-function encode(decifrar) {
-  let arrayDecifrar = decifrar.split([""]);
- 
+function encode(frase) {
 
-  console.log(arrayDecifrar);
+  let frasePicote = frase.split([""]);
 
-  for (i = 0; i < arrayDecifrar.length; i += 1){
-    if (arrayDecifrar.includes("a")){
-        decifrado = decifrar.replace(/a/, '1');
-      }
-    else if (arrayDecifrar.includes("e")){
-      decifrado = decifrar.replace(/e/, '2');
-    }
-    
-    else if (arrayDecifrar.includes("i")){
-      decifrado = decifrar.replace(/i/, '3');
-    }
-    
-    else if (arrayDecifrar.includes("o")){
-      decifrado = decifrar.replace(/o/, '4');
-    }
-    
-    else if (arrayDecifrar.includes("u")){
-      decifrado = decifrar.replace(/u/, '5');
-    }
-    else{
-      return("bug")
-    }
+  for (i = 0; i < frasePicote.length; i++){
+    troca = frase.replace(/a/g, "1").replace(/e/g, "2").replace(/i/g,"3").replace(/o/g, "4").replace(/u/, 5);
   }
-  console.log(decifrado)
+  return(troca);
 }
-encode("Go,trybe");
+encode("hello");
 
-function decode() {
-  // seu código aqui
+function decode(frase){
+  let frasePicote = frase.split([""]);
+
+  for (i = 0; i < frasePicote.length; i++){
+    troca = frase.replace(/1/g, "a").replace(/2/g, "e").replace(/3/g,"i").replace(/4/g, "o").replace(/5/, "u");
+  }
+  return(troca);
 }
+decode("h2ll4");
 
 // Desafio 10
 function techList() {
