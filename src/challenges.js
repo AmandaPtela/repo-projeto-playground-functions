@@ -77,7 +77,41 @@ function highestCount(numeros) {
 highestCount([9, 1, 2, 3, 9, 5, 7]);
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {}
+function catAndMouse(mouse, cat1, cat2) {
+  let disGato1 = cat1 - mouse;
+  let disGato2 = cat2 - mouse;
+
+  if (disGato1 < 0) {
+    disGato1 = disGato1 * -1;
+  }
+
+  if (disGato2 < 0) {
+    disGato2 = disGato2 * -1;
+  }
+
+  if (disGato2 < disGato1) {
+    return 'cat2';
+  } 
+  
+  else if (disGato1 < disGato2) {
+    return 'cat1';
+  } 
+
+  else {
+    return 'os gatos trombam e o rato foge';
+  }
+}
+/*
+  for(i = 0; i <= param.length ; i += 1)
+    if (param[i] == ["cat2", "bird", "dog", "mouse", "frog", "horse", "ant", "cat1"]){
+      console.log("cat2");}
+    else if (param[i] == ["cat2", "cat1", "mouse"]){
+      console.log("cat1");
+    }
+    else{
+      console.log("os gatos trombam e o rato foge");
+    }*/
+//catAndMouse(["cat2", "bird", "dog", "mouse", "frog", "horse", "ant", "cat1"])
 
 // Desafio 8
 function fizzBuzz(numeross) {
@@ -88,38 +122,46 @@ function fizzBuzz(numeross) {
       resultado.push('fizzBuzz');
     } else if (numeross[i] % 5 == 0) {
       resultado.push('buzz');
-    } else if (numeross[i] %3 == 0){
-      resultado.push("fizz");
-    }
-     else {
+    } else if (numeross[i] % 3 == 0) {
+      resultado.push('fizz');
+    } else {
       resultado.push('bug!');
     }
   }
-  return(resultado);
+  return resultado;
 }
 fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
 
 function encode(frase) {
+  let frasePicote = frase.split(['']);
 
-  let frasePicote = frase.split([""]);
-
-  for (i = 0; i < frasePicote.length; i++){
-    troca = frase.replace(/a/g, "1").replace(/e/g, "2").replace(/i/g,"3").replace(/o/g, "4").replace(/u/, 5);
+  for (i = 0; i < frasePicote.length; i++) {
+    troca = frase
+      .replace(/a/g, '1')
+      .replace(/e/g, '2')
+      .replace(/i/g, '3')
+      .replace(/o/g, '4')
+      .replace(/u/, '5');
   }
-  return(troca);
+  return troca;
 }
-encode("hello");
+encode('hello');
 
-function decode(frase){
-  let frasePicote = frase.split([""]);
+function decode(frase) {
+  let frasePicote = frase.split(['']);
 
-  for (i = 0; i < frasePicote.length; i++){
-    troca = frase.replace(/1/g, "a").replace(/2/g, "e").replace(/3/g,"i").replace(/4/g, "o").replace(/5/, "u");
+  for (i = 0; i < frasePicote.length; i++) {
+    troca = frase
+      .replace(/1/g, 'a')
+      .replace(/2/g, 'e')
+      .replace(/3/g, 'i')
+      .replace(/4/g, 'o')
+      .replace(/5/, 'u');
   }
-  return(troca);
+  return troca;
 }
-decode("h2ll4");
+decode('h2ll4');
 
 // Desafio 10
 function techList() {
