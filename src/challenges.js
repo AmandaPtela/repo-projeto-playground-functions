@@ -112,7 +112,7 @@ function fizzBuzz(numeross) {
   let resultado = [];
 
   for (i = 0; i < numeross.length; i += 1) {
-    if (numeross[i] % 3 == 0 && numeross[i] % 5 == 0) {
+    if (numeross[i] % 3 === 0 && numeross[i] % 5 === 0) {
       resultado.push('fizzBuzz');
     } else if (numeross[i] % 5 == 0) {
       resultado.push('buzz');
