@@ -1,11 +1,11 @@
 // Amanda Karoline
 // Desafio 1
 function compareTrue(a, b) {
-  if (a == true && b == true) {
-    return true;
-  } else if (a == true && b == false) {
+  if (a === true && b === false) {
     return false;
-  } else a == false && b == false;
+  } else if (a === true && b === true) {
+    return true;
+  } else a === false && b === false;
   {
     return false;
   }
@@ -18,9 +18,7 @@ function calcArea(base, height) {
   return area;
 }
 calcArea(51, 1);
-
 // Desafio 3
-
 function splitSentence(frase) {
   for (i = 0; i <= frase.length; i += 1) {
     let splited = frase.split(' ');
@@ -91,13 +89,9 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (disGato2 < disGato1) {
     return 'cat2';
-  } 
-
-  else if (disGato1 < disGato2) {
+  } else if (disGato1 < disGato2) {
     return 'cat1';
-  } 
-
-  else {
+  } else {
     return 'os gatos trombam e o rato foge';
   }
 }
