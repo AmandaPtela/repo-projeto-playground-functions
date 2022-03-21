@@ -1,11 +1,11 @@
 // Amanda Karoline
 // Desafio 1
 function compareTrue(a, b) {
-  if (a === true && b === true) {
+  if (a == true && b == true) {
     return true;
-  } else if (a === true && b === false) {
+  } else if (a == true && b == false) {
     return false;
-  } else a === false && b === false;
+  } else a == false && b == false;
   {
     return false;
   }
@@ -92,7 +92,7 @@ function catAndMouse(mouse, cat1, cat2) {
   if (disGato2 < disGato1) {
     return 'cat2';
   } 
-  
+
   else if (disGato1 < disGato2) {
     return 'cat1';
   } 

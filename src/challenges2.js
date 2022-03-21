@@ -1,6 +1,8 @@
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(numeroTel) {
+  for (numero of numeros){
+    numeroTelefone = ([0-9] [0-9] [])
+  }
 }
 
 // Desafio 12
