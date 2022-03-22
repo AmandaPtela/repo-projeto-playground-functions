@@ -31,7 +31,6 @@ generatePhoneNumber(['1','2','3','4','5','6','7','8','9','0','1']);
 
 // Desafio 12
 
-
 function triangleCheck(lineA, lineB, lineC) {
   let absLineBeC = Math.abs(lineB - lineC);
   let absLineAeC = Math.abs(lineA - lineC);
@@ -61,18 +60,6 @@ triangleCheck(10, 14, 8);
 
 // Desafio 13
 function hydrate(bebidas) {
-  let copo ;
-  for (key of bebidas){
-    if (key = 7 ){
-      copo = key * 1;
-      return(copo + ' copos de água');
-    }
-    else if (bebidas.key > 1){
-      copo = key * 1;
-      return(copo + ' copo de água')
-    }
-    else;
-  }
 }
 hydrate('1 cerveja');
 
