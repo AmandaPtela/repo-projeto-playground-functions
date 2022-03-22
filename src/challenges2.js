@@ -1,22 +1,31 @@
 // Desafio 11
 function generatePhoneNumber(numeroTel) {
-  for (i = 0; i <= numeroTel.length; i += 1) {
-    let telefone = numeroTel.slice(2, 7);
-    let telefone2 = numeroTel.slice(7,11);
-    let ddd = numeroTel.slice(0, 2);
-    let numero = '(' + ddd.join('') + ')' + ' ' + telefone.join('') + '-' + telefone2.join('');
-
-    if (numeroTel.length !== 11) {
-      return ('Array com tamanho incorreto.');
-    } 
-    
-    else if (numero[i] < '0' || numero[i] > '9' || numero[0] === '0' ) {
-      return('não é possível gerar um número de telefone com esses valores');
-    }
-    else if (numero[i] > '0' && numero[i] < '9' && numero[0] !== '0');{
-      return (numero);
+  if(numeroTel.length !==11){
+    return "Array com tamanho incorreto.";
+  }
+  
+  for (pos = 0; pos<=numeroTel.length; pos+=1){
+    if (numeroTel[pos] < 0 || numeroTel[pos] > 9){
+      return "não é possível gerar um número de telefone com esses valores";
     }
   }
+
+  for (pos = 0; pos<numeroTel.length; pos+=1){
+    contador = 1;
+    for (pos1 = pos+1; pos1 <= numeroTel.length; pos1+=1){
+      if (numeroTel[pos] == numeroTel[pos1]){
+        contador = contador + 1
+      }
+    }
+    if (contador >=3){
+      return "não é possível gerar um número de telefone com esses valores"
+    }
+  }
+  
+  let ddd = numeroTel.slice(0, 2)
+  let tel1 = numeroTel.slice(2, 7)
+  let tel2 = numeroTel.slice(7, 11)
+  return '(' +ddd.join("")+')' +" " +tel1.join("") +"-" +tel2.join("");
 }
 generatePhoneNumber(['1','2','3','4','5','6','7','8','9','0','1']);
 
@@ -51,9 +60,21 @@ function triangleCheck(lineA, lineB, lineC) {
 triangleCheck(10, 14, 8);
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(bebidas) {
+  let copo ;
+  for (key of bebidas){
+    if (key = 7 ){
+      copo = key * 1;
+      return(copo + ' copos de água');
+    }
+    else if (bebidas.key > 1){
+      copo = key * 1;
+      return(copo + ' copo de água')
+    }
+    else;
+  }
 }
+hydrate('1 cerveja');
 
 module.exports = {
   generatePhoneNumber,
