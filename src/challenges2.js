@@ -60,8 +60,22 @@ triangleCheck(10, 14, 8);
 
 // Desafio 13
 function hydrate(bebidas) {
+  let numeros = bebidas.match(/\d+/g).map(Number);
+  let soma = 0;
+  for ( i = 0; i < numeros.length; i++ ){
+   soma += numeros[i];
+  }
+
+    if (bebidas.includes(numeros)){
+    let copos = soma + " copo de água";
+    return(copos)
+    }
+    else{
+      let copos = soma + " copos de água";
+      return(copos)
+    }
 }
-hydrate('1 cerveja');
+hydrate("1cerveja");
 
 module.exports = {
   generatePhoneNumber,
