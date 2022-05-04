@@ -19,35 +19,17 @@ calcArea(51, 1);
 
 // Desafio 3
 function splitSentence(frase) {
-  for (let i = 0; i <= frase.length; i += 1) {
-    let splited = frase.split(' ');
-    return splited;
-  }
+  const splited = frase.split(' ');
+  return splited;
 }
-splitSentence('Vamo que vamo');
 
 // Desafio 4
-function concatName(palavras, palavras2, palavras3) {
-  let concat;
-  for (let i = 0; i <= palavras.length; i += 1) {
-    concat = `${palavras.slice(-1)}, ${palavras[0]}`;
-    return concat;
-  }
-  for (let i = 0; i <= palavras2.length; i += 1) {
-    concat = `${palavras2.slice(-1)}, ${palavras2[0]}`;
-    return concat;
-  }
-  for (let i = 0; i <= palavras3.length; i += 1) {
-    concat = `${palavras3.slice(-1)}, ${palavras3[0]}`;
-    return concat;
+function concatName(palavras) {
+  const palavras1Split = palavras.slice(-1) + ', ' + palavras.splice(0,1);
+  if (palavras) {
+    return palavras1Split;
   }
 }
-concatName(
-  ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
-  ['foguete', 'não', 'tem', 'ré'],
-  ['captain', 'my', 'captain'],
-);
-
 // Desafio 5
 let pontosWins = 3;
 let pontosTies = 1;
