@@ -146,8 +146,17 @@ function decode(frase) {
 decode('h2ll4');
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnologias, nome) {
+  const array = [];
+
+  for (let i = 0; i < tecnologias.length; i += 1) {
+    const lista = {
+      tech: tecnologias[i],
+      name: nome,
+    };
+    array.push(lista);
+  }
+  return array;
 }
 
 module.exports = {
