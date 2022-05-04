@@ -25,9 +25,11 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(palavras) {
-  const palavras1Split = palavras.slice(-1) + ', ' + palavras.splice(0,1);
+  const palavras1Slice = palavras.slice(-1);
+  const palavras2Slice = palavras.slice(0, 1);
+  const resultado = `${palavras1Slice}, ${palavras2Slice}`;
   if (palavras) {
-    return palavras1Split;
+    return resultado;
   }
 }
 // Desafio 5
