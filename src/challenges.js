@@ -1,14 +1,12 @@
-// Amanda Karoline
 // Desafio 1
 function compareTrue(a, b) {
   if (a === true && b === false) {
     return false;
-  } else if (a === true && b === true) {
-    return true;
-  } else a === false && b === false;
-  {
-    return false;
   }
+  if (a === true && b === true) {
+    return true;
+  }
+  return false;
 }
 compareTrue(true, true);
 
@@ -18,9 +16,10 @@ function calcArea(base, height) {
   return area;
 }
 calcArea(51, 1);
+
 // Desafio 3
 function splitSentence(frase) {
-  for (i = 0; i <= frase.length; i += 1) {
+  for (let i = 0; i <= frase.length; i += 1) {
     let splited = frase.split(' ');
     return splited;
   }
@@ -30,23 +29,23 @@ splitSentence('Vamo que vamo');
 // Desafio 4
 function concatName(palavras, palavras2, palavras3) {
   let concat;
-  for (i = 0; i <= palavras.length; i += 1) {
-    concat = palavras.slice(-1) + ', ' + palavras[0];
+  for (let i = 0; i <= palavras.length; i += 1) {
+    concat = `${palavras.slice(-1)}, ${palavras[0]}`;
     return concat;
   }
-  for (i = 0; i <= palavras2.length; i += 1) {
-    concat = palavras2.slice(-1) + ', ' + palavras2[0];
+  for (let i = 0; i <= palavras2.length; i += 1) {
+    concat = `${palavras2.slice(-1)}, ${palavras2[0]}`;
     return concat;
   }
-  for (i = 0; i <= palavras3.length; i += 1) {
-    concat = palavras3.slice(-1) + ', ' + palavras3[0];
+  for (let i = 0; i <= palavras3.length; i += 1) {
+    concat = `${palavras3.slice(-1)}, ${palavras3[0]}`;
     return concat;
   }
 }
 concatName(
   ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
   ['foguete', 'não', 'tem', 'ré'],
-  ['captain', 'my', 'captain']
+  ['captain', 'my', 'captain'],
 );
 
 // Desafio 5
@@ -65,8 +64,8 @@ function highestCount(numeros) {
   let maior = Math.max(...numeros);
   let vezes = 0;
 
-  for (i = 0; i <= numeros.length; i += 1) {
-    if (numeros[i] == maior) {
+  for (let i = 0; i <= numeros.length; i += 1) {
+    if (numeros[i] === maior) {
       vezes += 1;
     }
   }
@@ -80,47 +79,37 @@ function catAndMouse(mouse, cat1, cat2) {
   let disGato2 = cat2 - mouse;
 
   if (disGato1 < 0) {
-    disGato1 = disGato1 * -1;
+    disGato1 *= -1;
   }
 
   if (disGato2 < 0) {
-    disGato2 = disGato2 * -1;
+    disGato2 *= -1;
   }
 
   if (disGato2 < disGato1) {
     return 'cat2';
-  } else if (disGato1 < disGato2) {
-    return 'cat1';
-  } else {
-    return 'os gatos trombam e o rato foge';
   }
+  if (disGato1 < disGato2) {
+    return 'cat1';
+  }
+  return 'os gatos trombam e o rato foge';
 }
-/*
-  for(i = 0; i <= param.length ; i += 1)
-    if (param[i] == ["cat2", "bird", "dog", "mouse", "frog", "horse", "ant", "cat1"]){
-      console.log("cat2");}
-    else if (param[i] == ["cat2", "cat1", "mouse"]){
-      console.log("cat1");
-    }
-    else{
-      console.log("os gatos trombam e o rato foge");
-    }*/
-//catAndMouse(["cat2", "bird", "dog", "mouse", "frog", "horse", "ant", "cat1"])
 
 // Desafio 8
 function fizzBuzz(numeross) {
   let resultado = [];
 
-  for (i = 0; i < numeross.length; i += 1) {
+  for (let i = 0; i < numeross.length; i += 1) {
     if (numeross[i] % 3 === 0 && numeross[i] % 5 === 0) {
       resultado.push('fizzBuzz');
-    } else if (numeross[i] % 5 == 0) {
-      resultado.push('buzz');
-    } else if (numeross[i] % 3 == 0) {
-      resultado.push('fizz');
-    } else {
-      resultado.push('bug!');
     }
+    if (numeross[i] % 5 === 0) {
+      resultado.push('buzz');
+    }
+    if (numeross[i] % 3 === 0) {
+      resultado.push('fizz');
+    }
+    resultado.push('bug!');
   }
   return resultado;
 }
@@ -130,30 +119,30 @@ fizzBuzz([2, 15, 7, 9, 45]);
 function encode(frase) {
   let frasePicote = frase.split(['']);
 
-  for (i = 0; i < frasePicote.length; i++) {
-    troca = frase
+  for (let i = 0; i < frasePicote.length; i += 1) {
+    let troca = frase
       .replace(/a/g, '1')
       .replace(/e/g, '2')
       .replace(/i/g, '3')
       .replace(/o/g, '4')
       .replace(/u/, '5');
+    return troca;
   }
-  return troca;
 }
 encode('hello');
 
 function decode(frase) {
   let frasePicote = frase.split(['']);
 
-  for (i = 0; i < frasePicote.length; i++) {
-    troca = frase
+  for (let i = 0; i < frasePicote.length; i += 1) {
+    let troca = frase
       .replace(/1/g, 'a')
       .replace(/2/g, 'e')
       .replace(/3/g, 'i')
       .replace(/4/g, 'o')
       .replace(/5/, 'u');
+    return troca;
   }
-  return troca;
 }
 decode('h2ll4');
 
