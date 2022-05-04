@@ -99,19 +99,18 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numeross) {
   let resultado = [];
 
-  for (i = 0; i < numeross.length; i += 1) {
-    if (numeross[i] % 3 == 0 && numeross[i] % 5 == 0) {
+  for (let i = 0; i < numeross.length; i += 1) {
+    if (numeross[i] % 3 === 0 && numeross[i] % 5 === 0) {
       resultado.push('fizzBuzz');
-    } else if (numeross[i] % 5 == 0) {
+    } else if (numeross[i] % 5 === 0) {
       resultado.push('buzz');
-    } else if (numeross[i] %3 == 0){
-      resultado.push("fizz");
-    }
-     else {
+    } else if (numeross[i] % 3 === 0) {
+      resultado.push('fizz');
+    } else {
       resultado.push('bug!');
     }
   }
-  return(resultado);
+  return (resultado);
 }
 fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
