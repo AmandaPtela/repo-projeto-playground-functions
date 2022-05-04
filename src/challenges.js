@@ -148,17 +148,20 @@ decode('h2ll4');
 // Desafio 10
 function techList(tecnologias, nome) {
   const array = [];
+  const techsOrdenadas = tecnologias.sort();
+  if (tecnologias.length === 0) {
+    return ('Vazio!');
+  }
 
   for (let i = 0; i < tecnologias.length; i += 1) {
     const lista = {
-      tech: tecnologias[i],
+      tech: techsOrdenadas[i],
       name: nome,
     };
     array.push(lista);
   }
   return array;
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
