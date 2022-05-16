@@ -83,22 +83,21 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numeross) {
   let resultado = [];
 
-  for (let i = 0; i < numeross.length; i += 1) {
-    if (numeross[i] % 3 === 0 && numeross[i] % 5 === 0) {
+  numeross.forEach((element) => {
+    if (element % 3 === 0 && element % 5 === 0) {
       resultado.push('fizzBuzz');
-    } else if (numeross[i] % 5 === 0) {
+    } else if (element % 5 === 0) {
       resultado.push('buzz');
-    } else if (numeross[i] % 3 === 0) {
+    } else if (element % 3 === 0) {
       resultado.push('fizz');
     } else {
       resultado.push('bug!');
     }
-  }
+  });
   return (resultado);
 }
-fizzBuzz([2, 15, 7, 9, 45]);
-// Desafio 9
 
+// Desafio 9
 function encode(frase) {
   let frasePicote = frase.split(['']);
 
@@ -127,7 +126,6 @@ function decode(frase) {
     return troca;
   }
 }
-decode('h2ll4');
 
 // Desafio 10
 function techList(tecnologias, nome) {
